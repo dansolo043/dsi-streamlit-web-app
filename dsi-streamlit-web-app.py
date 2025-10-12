@@ -7,7 +7,7 @@ import joblib
 
 # load our model pipeline object
 
-model = joblib.load("model.joblib")
+model = joblib.load("data/model.joblib")
 
 # Add a title and instructions 
 
@@ -44,4 +44,5 @@ if st.button("Submit For Prediction"):
     
     st.subheader(f"Based on these customer attributes, out model predicts a purchase \
                  probability of {pred_proba:.0%}")
+
     
