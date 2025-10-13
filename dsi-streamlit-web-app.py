@@ -7,7 +7,7 @@ import joblib
 
 # load our model pipeline object
 
-model = joblib.load("data/model.joblib")
+model = joblib.load("model.joblib")
 
 # Add a title and instructions 
 
@@ -46,3 +46,4 @@ if st.button("Submit For Prediction"):
                  probability of {pred_proba:.0%}")
 
     
+
