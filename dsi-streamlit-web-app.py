@@ -26,7 +26,7 @@ gender = st.radio(label="02. Enter the customer's gender", options=["M", "F"])
 
 # credit score input
 
-credit_score = st.number_input(label="03. Enter the customer's credi score", min_value=0,
+credit_score = st.number_input(label="03. Enter the customer's credit score", min_value=0,
                       max_value=1000, value=500)
 
 # submitting the given information
@@ -44,4 +44,5 @@ if st.button("Submit For Prediction"):
     
     st.subheader(f"Based on these customer attributes, out model predicts a purchase \
                  probability of {pred_proba:.0%}")
+
     
